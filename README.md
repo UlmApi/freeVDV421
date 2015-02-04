@@ -5,7 +5,6 @@
 
 (At least some) German buses and trams use infrared communications to communicate with fixed roadside beacons. Basically, the conversation goes as such:
 
-conversation goes as this:
 
 > HELLO THIS IS BUS HELLO THIS IS BUS HELLO THI–
 
@@ -39,3 +38,7 @@ Through educated guesses, hints, and the practical application of reverse-biased
 As you might already have figured out, that makes for just three pulses in a zero, and six pulses in a 1. Unfortunately, this rules out using standard IR demodulators like the TSOP3* models – since those need a series of at least 10 pulses, and pauses of at least 10 pulses in between.
 
 [Biphase Mark Encoding]:http://en.wikipedia.org/wiki/Differential_Manchester_encoding
+
+## Tools
+
+*/IR-Debugger* contains an Arduino script for simulating a bus's IR transmission.
